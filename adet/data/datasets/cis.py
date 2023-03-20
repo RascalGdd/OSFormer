@@ -2,15 +2,15 @@ import os
 from detectron2.data.datasets.coco import load_coco_json
 from detectron2.data import MetadataCatalog, DatasetCatalog
 
-DATASET_ROOT = 'COD10K-v3'
+DATASET_ROOT = '/cluster/scratch/denfan/diandian_data/COD10K-v3/'
 ANN_ROOT = os.path.join(DATASET_ROOT, 'annotations')
-TRAIN_PATH = os.path.join(DATASET_ROOT, 'Train/Image')
-TEST_PATH = os.path.join(DATASET_ROOT, 'Test/Image')
+TRAIN_PATH = os.path.join(DATASET_ROOT, 'Train_Image_CAM')
+TEST_PATH = os.path.join(DATASET_ROOT, 'Test_Image_CAM')
 TRAIN_JSON = os.path.join(ANN_ROOT, 'train_instance.json')
 TEST_JSON = os.path.join(ANN_ROOT, 'test2026.json')
 
-NC4K_ROOT = 'NC4K'
-NC4K_PATH = os.path.join(NC4K_ROOT, 'Imgs')
+NC4K_ROOT = '/cluster/scratch/denfan/diandian_data/NC4K/test/'
+NC4K_PATH = os.path.join(NC4K_ROOT, 'image')
 NC4K_JSON = os.path.join(NC4K_ROOT, 'nc4k_test.json')
 
 CLASS_NAMES = ["foreground"]
